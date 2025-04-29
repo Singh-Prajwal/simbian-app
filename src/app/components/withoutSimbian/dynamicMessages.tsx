@@ -28,7 +28,7 @@ export default function DynamicMessages() {
         <motion.div
           key={messages[index]}
           initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.5 }}
           className="text-base md:text-lg text-gray-300 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-red-400/30 inline-block shadow-md"

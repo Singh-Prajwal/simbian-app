@@ -9,7 +9,6 @@ export default function WithoutSimbianSection() {
   return (
     <section className="relative w-full bg-[url('/images/without-bg.jpg')] bg-cover bg-center py-24 px-6">
       <div className="max-w-7xl mx-auto text-white">
-        {/* Title + Subheading + CTA */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +16,7 @@ export default function WithoutSimbianSection() {
           viewport={{ once: true }}
           className="text-center md:text-left"
         >
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight leading-snug">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-snug">
             Without <span className="text-red-400">Simbian</span>
           </h2>
           <p className="mt-4 text-lg md:text-2xl text-gray-300 max-w-2xl">
@@ -28,9 +27,7 @@ export default function WithoutSimbianSection() {
           </button>
         </motion.div>
 
-        {/* Grid Layout */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-          {/* LEFT: Dynamic messages */}
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -42,7 +39,6 @@ export default function WithoutSimbianSection() {
             <DynamicMessages />
           </motion.div>
 
-          {/* RIGHT: Alert cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <AlertCard
               title="Ignored Alerts"

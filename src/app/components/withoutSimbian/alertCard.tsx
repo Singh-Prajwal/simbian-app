@@ -65,14 +65,14 @@ export default function AlertCard({
       <div className={`text-5xl mb-4 ${iconColorMap[color]}`}>{icon}</div>
 
       <motion.div
-        className="text-5xl font-bold text-white"
-        animate={{ scale: [1, 1.1, 1] }}
+        className="text-4xl font-bold text-white"
+        whileInView={{ scale: [1, 1.1, 1] }}
         transition={{ repeat: Infinity, repeatDelay: 3, duration: 0.5 }}
       >
         {count}
       </motion.div>
 
-      <div className="mt-2 text-xl font-semibold text-gray-300">{title}</div>
+      <div className="mt-2 text-l font-semibold text-gray-300">{title}</div>
 
       <AlertDropper />
     </motion.div>
