@@ -18,5 +18,3 @@ I've analyzed the project requirements and implemented a modern, interactive Nex
 
 ---
 
-Feel free to adjust based on your specific implementation details.
-Would you like me to generate this as a `.md` file for download?
